@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- 부트스트랩 -->
+		<link href="css/bootstrap.min.css" rel="stylesheet" media="screen"> 
+		
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<link rel="shortcut icon" href="">
+		
+		<title>Choi Jeongho's Homepage</title>
+		
+		<!-- Bootstrap core CSS -->
+		<link href="../../bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+		<!-- Custom styles for this template -->
+		<link href="navbar-static-top.css" rel="stylesheet">
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<script type="text/javascript" src="http://test.co.kr/respond.min.js"></script>
+<![endif]-->
+		
+		
+		
+		<script src="calc.js"></script>
+			
+
+
+		
+		
+		
+	</head>
+	<body>
+		<!-- Static navbar -->
+		<div class="navbar navbar-default navbar-static-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="http://mrchoijh.github.io/index.html">Jeongho's Homepages</a>
+				</div>
+				<div class="navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="http://mrchoijh.github.io/index.html">Home</a></li>
+						<li><a href="http://mrchoijh.github.io/introduce.html">个人介绍</a></li>	
+						<li><a href="http://mrchoijh.github.io/history.html">个人日志</a></li>	
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"> web前端课程展示区 <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="http://mrchoijh.github.io/fe/hw1/hw1.html">作业1</a></li>
+								<li><a href="http://mrchoijh.github.io/fe/hw2/hw2.html">作业2</a></li>
+								<li><a href="http://mrchoijh.github.io/fe/hw3/hw3.html">作业3</a></li>
+								<li><a href="http://mrchoijh.github.io/fe/hw4/hw4.html">作业4</a></li>
+								<li><a href="http://mrchoijh.github.io/fe/hw5/hw5.html">作业5</a></li>
+								<li class="divider"></li>
+								<li><a href="http://mrchoijh.github.io/fe/hw6/hw6.html">综合实验</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div><!--/.nav-collapse -->
+			</div>
+		</div>
+		
+		<div class="container">			
+			<!-- Main component for a primary marketing message or call to action -->   
+			<div class="jumbotron">
+				<h1>Hw2 Report</h1>
+				<img src="hw2_1.PNG" width="400", height="300" align="left">
+					<font size="6"><b>用户提示</b></font><br>
+					<font size="6"><b>1.</b></font>选择想赢的球队选则。(下次选时一定要以前选择之一)<br>
+					<font size="6"><b>2.</b></font>不要缺选。<br>
+					<font size="6"><b>3.</b></font>选完之后一定要保存。<br>
+					<font size="6"><b>4.</b></font>最后选完冠军队，就可以知道那个队胜利的概率。<br>
+				
+				<div>
+					<p>选择1Round胜者</p>
+					<form name="round1" action="javascript:Round_1()" method="get">
+						<input type="radio" name="group1" value="A1">A1
+						<input type="radio" name="group1" value="B2">B2
+						&nbsp;&nbsp;
+						<input type="radio" name="group2" value="A1">C1
+						<input type="radio" name="group2" value="B2">D2
+						&nbsp;&nbsp;
+						<input type="radio" name="group3" value="A1">E1
+						<input type="radio" name="group3" value="B2">F2
+						&nbsp;&nbsp;
+						<input type="radio" name="group4" value="A1">G1
+						<input type="radio" name="group4" value="B2">H2
+						&nbsp;&nbsp;
+						<input type="radio" name="group5" value="A1">A2
+						<input type="radio" name="group5" value="B2">B1
+						&nbsp;&nbsp;
+						<input type="radio" name="group6" value="A1">C2
+						<input type="radio" name="group6" value="B2">D1
+						&nbsp;&nbsp;
+						<input type="radio" name="group7" value="A1">E2
+						<input type="radio" name="group7" value="B2">F1
+						&nbsp;&nbsp;
+						<input type="radio" name="group8" value="A1">G2
+						<input type="radio" name="group8" value="B2">H1
+						
+						<input type="submit" value="结果保存">
+					</form>
+				</div>
+				<div>
+					<p>选择2Round胜者</p>
+					<form name="round2" action="javascript:Round_2()" method="get">
+						<input type="radio" name="group1" value="A1">A1
+						<input type="radio" name="group1" value="B2">B2
+						<input type="radio" name="group1" value="A1">C1
+						<input type="radio" name="group1" value="B2">D2
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="radio" name="group2" value="A1">E1
+						<input type="radio" name="group2" value="B2">F2
+						<input type="radio" name="group2" value="A1">G1
+						<input type="radio" name="group2" value="B2">H2
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="radio" name="group3" value="A1">A2
+						<input type="radio" name="group3" value="B2">B1			
+						<input type="radio" name="group3" value="A1">C2
+						<input type="radio" name="group3" value="B2">D1
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="radio" name="group4" value="A1">E2
+						<input type="radio" name="group4" value="B2">F1
+						<input type="radio" name="group4" value="A1">G2
+						<input type="radio" name="group4" value="B2">H1
+						&nbsp;&nbsp;
+						<input type="submit" value="结果保存">
+					</form>
+				</div>
+
+				<div>
+					<p>选择3Round胜者</p>
+					<form name="round3" action="javascript:Round_3()" method="get">
+						<input type="radio" name="group1" value="A1">A1
+						<input type="radio" name="group1" value="B2">B2
+						<input type="radio" name="group1" value="A1">C1
+						<input type="radio" name="group1" value="B2">D2
+						<input type="radio" name="group1" value="A1">E1
+						<input type="radio" name="group1" value="B2">F2
+						<input type="radio" name="group1" value="A1">G1
+						<input type="radio" name="group1" value="B2">H2
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="radio" name="group2" value="A1">A2
+						<input type="radio" name="group2" value="B2">B1
+						<input type="radio" name="group2" value="A1">C2
+						<input type="radio" name="group2" value="B2">D1
+						<input type="radio" name="group2" value="A1">E2
+						<input type="radio" name="group2" value="B2">F1
+						<input type="radio" name="group2" value="A1">G2
+						<input type="radio" name="group2" value="B2">H1
+						&nbsp;&nbsp;&nbsp;
+						<input type="submit" value="结果保存">
+					</form>
+				</div>
+				<div>
+					<p>选择4Round胜者</p>
+					<form name="round4" action="javascript:Round_4()" method="get">
+						<input type="radio" name="group1" value="A1">A1
+						<input type="radio" name="group1" value="B2">B2
+						<input type="radio" name="group1" value="A1">C1
+						<input type="radio" name="group1" value="B2">D2
+						<input type="radio" name="group1" value="A1">E1
+						<input type="radio" name="group1" value="B2">F2
+						<input type="radio" name="group1" value="A1">G1
+						<input type="radio" name="group1" value="B2">H2
+						<input type="radio" name="group1" value="A1">A2
+						<input type="radio" name="group1" value="B2">B1
+						<input type="radio" name="group1" value="A1">C2
+						<input type="radio" name="group1" value="B2">D1
+						<input type="radio" name="group1" value="A1">E2
+						<input type="radio" name="group1" value="B2">F1
+						<input type="radio" name="group1" value="A1">G2
+						<input type="radio" name="group1" value="B2">H1
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="submit" value="结果保存">
+					</form>
+				</div>
+				
+				
+				
+				
+
+					
+				
+				
+				
+				
+				
+			</div><!-- bd -->
+		</div>
+		
+		<!-- Bootstrap core JavaScript
+================================================== -->
+		<!-- Placed at the end of the document so the pages load faster -->
+		<script src="../../bootstrap/jquery.min.js"></script>
+		<script src="../../bootstrap/dist/js/bootstrap.min.js"></script>
+	</body>
+</html>
