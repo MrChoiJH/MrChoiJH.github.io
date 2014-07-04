@@ -26,7 +26,7 @@
 		
 		
 		<script src="calc.js"></script>
-			
+		<script src="hw2_2.js"></script>	
 
 
 		
@@ -71,9 +71,39 @@
 			<!-- Main component for a primary marketing message or call to action -->   
 			<div class="jumbotron">
 				<h1>Hw2 Report</h1>
+				
+				<font size="6"><b>实验环境</b></font> : Windows7 32bit（韩文版），github<br>
+				<font size="6"><b>主要工具</b></font> : Source Tree，Brackets，bootstrapk<br>
+				<font size="6"><b>1题</b></font>
+				<p>1. 答案："undefined"。 然 foo.bar 传递给了函数，但是真正执行的时候，函数 bar 的上下文环境是 arguments。所以上下文环境是 arguemnts 就没问题了。</p>
+				<font size="6"><b>2题</b></font>
+				<p>答案："undefined"。new写了两次。第1个new上 function 执行后返回一样的function。不过下个new不知道用哪个function。因为有二义性，所以答案是"undefined"。</p>
+				<font size="6"><b>3题</b></font>
+				<p>答案："function"。原式变成下式。
+				<p>function bar(){</p>
+				<p>&nbsp;&nbsp;function foo(){}</p>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;return foo;</p>
+				<p>&nbsp;&nbsp;foo=10;	</p> 
+				<p>&nbsp;&nbsp;var foo='11'}</p>
+				<p>	call bar时，'bar'还没执行。所以输出是"function"。</p>
+				<font size="6"><b>4题</b></font>
+				<p>答案：3,1。 原式变成下列式。 </p>
+				<p>baz: {</p>
+				<p>&nbsp;&nbsp;x: 1,</p>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;bar: function() {</p>
+				<p>&nbsp;&nbsp;return this.x;</p>
+				<p>&nbsp;&nbsp; }</p>
+				<p> }</p>
+				<p>baz.bar()执行之前，用"this"的参数来表示"baz"。所以"this.x"是1。不过参照bar函数时，"captured()"已执行，所以变量3输出。 所以答案是3,1。</p>
+				<font size="6"><b>5题</b></font>
+				<p>5.答案： "undefined" 文法不对。所以return需改成return;。所以答案是undefined。</p>
+				
+				
+				
+				<font size="6"><b>6题</b></font><br>
 				<img src="hw2_1.PNG" width="400", height="300" align="left">
-					<font size="6"><b>用户提示</b></font><br>
-					<font size="6"><b>1.</b></font>选择想赢的球队选则。(下次选时一定要以前选择之一)<br>
+					<font size="6"><b>用户提示（求胜利队的胜率）</b></font><br>
+					<font size="6"><b>1.</b></font>选择想赢的球队。(下次选时一定要以前选择之一)<br>
 					<font size="6"><b>2.</b></font>不要缺选。<br>
 					<font size="6"><b>3.</b></font>选完之后一定要保存。<br>
 					<font size="6"><b>4.</b></font>最后选完冠军队，就可以知道那个队胜利的概率。<br>
@@ -183,7 +213,29 @@
 					</form>
 				</div>
 				
-				
+				<font size="6"><b>7题</b></font><br>
+				<font size="6"><b>用户提示</b></font><br>
+				<font size="6"><b>1.</b></font>输入要寻找同学的信息。（字母的大小与结果有关）<br>
+				<font size="6"><b>2.</b></font>Search for all找出DB上的所有同学。<br>
+				<font size="6"><b>3.</b></font>Search for conditional输入要寻找同学的部分信息就可以。<br>
+				<font size="6"><b>4.</b></font>找不到输出false。<br>
+				<h2>Search for all</h2>
+				<form action="javascript:Search()" method="get">
+					<input type="submit" name="SearchAll" value="search all">
+				</form>
+				<h2>Search for conditional</h2>
+				<font size="6">
+					<b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hometown&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Age
+					</b>
+				</font><br>
+				<form action="javascript:PartSearch()"  name="Person" method="get">
+					<input type="text" name="NameText">
+					<input type="text" name="HomeText">
+					<input type="text" name="AgeText">
+					<input type="submit" name="Search" value="search">
+				</form>
 				
 				
 

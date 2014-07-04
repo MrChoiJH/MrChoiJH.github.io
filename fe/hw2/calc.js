@@ -490,6 +490,14 @@ var A1 = 100;
 					else if(arr[6] == "3"){	temp1 = 0.0001*temp1*temp2*Calc(G2,G1);}
 					else if(arr[7] == "3"){	temp1 = 0.0001*temp1*temp2*Calc(G2,H2);}
 				}
-				alert(temp1+"%");			
+				alert(temp1+"%");		
+temp1=0;
+temp2=0;
+temp3=0;
+temp4=0;
+temp5=0;
+temp6=0;
+temp7=0;
+temp8=0;					
 			}
 			
