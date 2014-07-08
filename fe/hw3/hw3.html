@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- 부트스트랩 -->
+		<link href="css/bootstrap.min.css" rel="stylesheet" media="screen"> 
+		
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<link rel="shortcut icon" href="">
+		
+		<title>Choi Jeongho's Homepage</title>
+		
+		<!-- Bootstrap core CSS -->
+		<link href="../../bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+		<!-- Custom styles for this template -->
+		<link href="navbar-static-top.css" rel="stylesheet">
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<script type="text/javascript" src="http://test.co.kr/respond.min.js"></script>
+<![endif]-->
+		
+		
+		
+		<script src="calc.js"></script>
+		<script src="hw2_2.js"></script>	
+
+
+		
+		
+		
+	</head>
+	<body>
+		<!-- Static navbar -->
+		<div class="navbar navbar-default navbar-static-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="http://mrchoijh.github.io/index.html">Jeongho's Homepages</a>
+				</div>
+				<div class="navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="http://mrchoijh.github.io/index.html">Home</a></li>
+						<li><a href="http://mrchoijh.github.io/introduce.html">个人介绍</a></li>	
+						<li><a href="http://mrchoijh.github.io/history.html">个人日志</a></li>	
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"> web前端课程展示区 <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="http://mrchoijh.github.io/fe/hw1/hw1.html">作业1</a></li>
+								<li><a href="http://mrchoijh.github.io/fe/hw2/hw2.html">作业2</a></li>
+								<li><a href="http://mrchoijh.github.io/fe/hw3/hw3.html">作业3</a></li>
+								<li><a href="http://mrchoijh.github.io/fe/hw4/hw4.html">作业4</a></li>
+								<li><a href="http://mrchoijh.github.io/fe/hw5/hw5.html">作业5</a></li>
+								<li class="divider"></li>
+								<li><a href="http://mrchoijh.github.io/fe/hw6/hw6.html">综合实验</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div><!--/.nav-collapse -->
+			</div>
+		</div>
+		
+		<div class="container">			
+			<!-- Main component for a primary marketing message or call to action -->   
+			<div class="jumbotron">
+				<h1>Hw3 Report</h1>
+				
+				<font size="6"><b>实验环境</b></font> : Windows7 32bit（韩文版），github<br>
+				<font size="6"><b>主要工具</b></font> : Source Tree，Brackets，bootstrapk<br>
+				<font size="6"><b>这是个秘♂密</b></font>
+				<p>1. 首先看sourse，可以知道重载decryptText函数，且已决定4Iv2lbia，title值。所以看java.js所需要的代码。</p>
+				<p>2. decryptText函数有decrypt(d)部分，执行decrypt(d)函数。先看decrpyt（d）函数。。</p>
+				<p>3. decrpyt（d）函数中执行GibberishAES.dec(d, a)函数。用alert来看 a，d就可以知道a：我写的密码 d：上述的title值。去看GibberishAES.dec(d, a)函数代码。</p>
+				<p>4. 已知ａ从０到９９９９之间，所以try, catch部分用for来输入0~9999找正确的密码。最后输出密码。</p>
+				<p>5. 结果：2674</p>
+				
+				<font size="6"><b>真·近期热门课程</b></font>
+				<p>加上的下面的内容。用document来修改HTML的内容。</p>
+				<p>		
+				var course 	= document.getElementById("WebCourse").innerHTML = "Web前段技术实训（软件学院)";
+				var name	= document.getElementById("WebName").innerHTML = "刘强";
+
+				var english = document.getElementById("English");
+				var web = document.getElementById("Web");				
+				var list = document.getElementById("List");
+				
+				list.insertBefore(web, english);				
+			    </p>
+				<input type="button" value="模拟link" onclick="location.href='2.1.2.1/2.1.2.1.html'">
+				<br>
+				
+				<font size="6"><b>课程列表模式下增加序号</b></font>
+				<p>先登录我的learn.cic.tsinghua.edu.cn。用chrome的developer tool有因素检查。（翻译有可能错）可以知道愿意看程序的部分容易知道。所以我们需要改变下图部分。</p>
+				<p>调margin-left来课程前面的空格。然后前面插入递增的数字。再看公告，文件，作业部分。写上0的部分直接改为1073741824。</p>
+				<input type="button" value="模拟link" onclick="location.href='2.1.2.2/2.1.2.2.html'">
+				<br>
+				<font size="6"><b>我们都是网络学堂改造大师</b></font>
+				<p>只改了上单的课堂button</p>
+				<input type="button" value="模拟link" onclick="location.href='main.main.html'">
+				<br>
+				
+				
+			</div><!-- bd -->
+		</div>
+		
+		<!-- Bootstrap core JavaScript
+================================================== -->
+		<!-- Placed at the end of the document so the pages load faster -->
+		<script src="../../bootstrap/jquery.min.js"></script>
+		<script src="../../bootstrap/dist/js/bootstrap.min.js"></script>
+	</body>
+</html>
