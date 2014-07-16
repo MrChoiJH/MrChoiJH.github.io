@@ -1,0 +1,170 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+<html>
+<head>
+<title>6x6 Puzzle Game</title>
+<meta name="generator" content="Microsoft FrontPage 4.0">
+
+<style type="text/css">
+body {
+    background-image: url(../6x6background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+</style>
+
+<!-- 구획 나누기 -->
+<style>
+#wrap{width:802px;
+height:auto;
+background-color:red;
+}
+header{
+font-size:90px;
+color:white;
+font-family:Tahoma;
+text-align:center;
+height:3%;
+border-bottom:10px double white;
+margin:0px;
+
+}
+section{
+margin-top:10px;
+}
+.ar01{width:15%;
+height:600px;
+margin-left:10px;
+margin-top:10px;
+float:left;
+border-right:10px ridge white;
+
+font-size:25px;
+color:white;
+font-family:Tahoma;
+text-align:center;
+}
+
+.ar02{width:80%;
+float:right;
+margin-top:10px;
+margin-right:10px;
+
+}
+</style>
+
+<!--하이퍼 링크  색깔 및줄 지우기-->
+<style type="text/css">
+A:link {text-decoration:none;color:white}
+A:visited {text-decoration:none; color:white}
+A:hover {text-decoration:none;color:white}
+</style>
+
+<script language="JavaScript" src="../6x6puzzle.js"></script>
+
+</head>
+
+<body bgcolor="silver" text="black" link="#0000EE" vlink="#551A8B" alink="red" onload="stopWatch = new StopWatch(document.frm,'time','buttonA','buttonB','s');">
+
+<audio controls="" preload="" autoplay="" loop="">
+<source src="../bgm.mp3" type="audio/mp3"/>
+</audio>
+
+
+<header>
+<font align="center">6x6 Puzzle</font>
+</header>
+
+
+<article class="ar01">
+<h1>Stage</h1>
+<form name="rolloverbox">
+<p>
+<input type="checkbox" name="boxes" value="ON">
+<a href="../stage1/stage1.html" onMouseover="rollovercheck(0)" onMouseout="rolloutcheck(0)">
+1  ::: stage1 :::
+</a>
+<br><br>
+<input type="checkbox" name="boxes" value="ON">
+<a href="../stage2/stage2.html" onMouseover="rollovercheck(1)" onMouseout="rolloutcheck(1)">
+2  ::: stage2 :::
+</a>
+<br><br>
+<input type="checkbox" name="boxes" value="ON">
+<a href="../stage3/stage3.html" onMouseover="rollovercheck(2)" onMouseout="rolloutcheck(2)">
+3 ::: stage3 :::
+</a>
+<br><br>
+<input type="checkbox" name="boxes" value="ON">
+<a href="../stage4/stage4.html" onMouseover="rollovercheck(3)" onMouseout="rolloutcheck(3)">
+4  ::: stage4 :::
+</a>
+<br><br>
+<input type="checkbox" name="boxes" value="ON">
+<a href="../stage5/stage5.html" onMouseover="rollovercheck(4)" onMouseout="rolloutcheck(4)">
+5  ::: stage5 :::
+</a>
+<br><br>
+</p>
+</form>
+<script>
+ var thebox=document.rolloverbox
+ function rollovercheck(whichbox){
+    thebox.boxes[whichbox].checked=true
+}
+
+ function rolloutcheck(whichbox){
+    thebox.boxes[whichbox].checked=false
+}
+</script>
+</article>
+
+
+<article class="ar02">
+<div align="center"><table border>
+	
+    <tr>
+        <td width="50%" align="center"><img src="complete.jpg" width="294px" height="294px">	
+		<script language="JavaScript">
+with(window.document)
+  {
+    open();
+    writeln('<table border=1 cellpadding=0 cellspacing=1>');
+    for(var i=1;i<37;i++)
+       {
+         if(i==1 || i==7 || i==13 || i==19 || i==25 || i==31)
+           {
+             writeln('<tr>');
+           }
+         writeln('  <td width=49 height=49>');
+         writeln('      <a href=JavaScript:void(0); onclick=ActiveImage(',i,');>');
+         writeln('       <img src=',i,'.gif border=0 width=49 height=49 name=i',i,'></a>');
+         writeln('  </td>');
+         if(i==6 || i==12 || i==18 || i==24 || i==30 || i==36)
+           {
+              writeln('</tr>');
+           }
+        }
+      writeln('</table>');
+      close();
+    }
+            </script>
+        </td>
+    </tr>
+</table></div>
+
+ <center>
+        <form name="frm">
+        <b>Timer :</b>
+        <!-- seconds 부분 //-->
+        <input type="text" name="time" size="5" class="inputtext"/>
+        s
+        <br />
+        <input type="button" name="buttonA" class="inputbutton"/>
+        <input type="button" name="buttonB" class="inputbutton"/>
+		<input type="button" value="back to menu" onclick="location.href='../../index.html'"/>
+        </form>
+    </center>
+</article>
+</body>
+
+</html>
